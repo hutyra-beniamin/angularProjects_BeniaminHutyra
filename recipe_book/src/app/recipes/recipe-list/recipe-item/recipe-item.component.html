@@ -1,0 +1,14 @@
+<div class="container text-center">
+    <a style="cursor: pointer; text-decoration:none;" [routerLink]="[index]" routerLinkActive="active">
+
+
+        <div class="card mb-3">
+            <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title text-dark">{{ recipe.name }}</h5>
+                <p class="card-text text-dark">{{ recipe.description }}</p>
+
+            </div>
+        </div>
+    </a>
+</div>

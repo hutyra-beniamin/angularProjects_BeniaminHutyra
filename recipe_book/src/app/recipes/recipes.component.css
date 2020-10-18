@@ -1,0 +1,15 @@
+#hero {
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+    padding-right: 20vw;
+    padding-left: 20vw;
+    background: /* top, transparent red */
+    linear-gradient( rgba(121, 121, 121, 0.45), rgba(0, 0, 0, 0.70)), /* bottom, image */
+    url(https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+}
+
+#title-styling {
+    padding: 1vw !important;
+    border-bottom: 1px solid white;
+}
