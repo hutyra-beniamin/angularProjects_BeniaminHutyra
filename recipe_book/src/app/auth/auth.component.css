@@ -1,0 +1,32 @@
+#login-form {
+    border: 1px solid black;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    padding-top: 3vw !important;
+    padding-bottom: 3vw !important;
+    -webkit-box-shadow: 4px 7px 8px 4px rgba(0, 0, 0, 0.53);
+    box-shadow: 4px 7px 8px 4px rgba(0, 0, 0, 0.53);
+    -webkit-border-radius: 22px;
+    border-radius: 22px;
+}
+
+#hero {
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    background: /* top, transparent red */
+    linear-gradient( rgba(121, 121, 121, 0.45), rgba(0, 0, 0, 0.70)), /* bottom, image */
+    url(https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+#title-styling {
+    padding: 1vw !important;
+    border-bottom: 1px solid white;
+}
+
+input {
+    opacity: 0.5;
+}

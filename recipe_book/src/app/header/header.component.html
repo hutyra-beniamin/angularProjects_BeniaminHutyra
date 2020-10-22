@@ -29,9 +29,13 @@
 
                 </div>
             </li>
-            <li class="nav-item" *ngIf="isAuthenticated">
-                <a class="nav-link" (click)="onLogout()"> Logout </a>
-            </li>
         </ul>
+    </div>
+    <div class="text-right">
+
+        <span class="nav-item" *ngIf="isAuthenticated">
+            <a class="nav-link btn btn-outline-danger" (click)="onLogout()"> Logout </a>
+        </span>
+
     </div>
 </nav>
