@@ -1,3 +1,14 @@
-button {
-    margin: 1vw;
-}
+    button {
+        margin: 1vw;
+    }
+    
+    #ingredient-style {
+        border: 2px solid black;
+        -webkit-border-radius: 14px;
+        border-radius: 14px;
+    }
+    
+    #ingredient-heading-title {
+        border-bottom: 1px solid grey;
+        margin-bottom: 1.5vw;
+    }

@@ -3,11 +3,16 @@
         <div class="col-xs-12 col-md-12 mt-5">
             <app-shopping-edit></app-shopping-edit>
             <hr>
-            <ul class="list-group">
-                <a class="list-group-item" style="cursor: pointer" *ngFor="let ingredient of ingredients; let i = index" (click)="onEditItem(i)">
-        {{ ingredient.name }} ({{ ingredient.amount }})
-      </a>
-            </ul>
+            <div class="container d-flex">
+                <div class="card w-30 m-3 btn" *ngFor="let ingredient of ingredients; let i = index" (click)="onEditItem(i)">
+                    <a>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ ingredient.name }}</h5>
+                            <p class="card-text">Amount: {{ ingredient.amount }}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
