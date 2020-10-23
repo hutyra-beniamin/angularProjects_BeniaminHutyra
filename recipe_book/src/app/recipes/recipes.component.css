@@ -1,15 +1,27 @@
 #hero {
-    padding-top: 12vw;
-    padding-bottom: 12vw;
-    padding-right: 20vw;
-    padding-left: 20vw;
     background: /* top, transparent red */
     linear-gradient( rgba(121, 121, 121, 0.45), rgba(0, 0, 0, 0.70)), /* bottom, image */
     url(https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size: cover;
+    /* Set a specific height */
+    height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*padding-top: 12vw;
+    padding-bottom: 12vw;
+    padding-right: 20vw;
+    padding-left: 20vw;*/
 }
 
 #title-styling {
-    padding: 1vw !important;
+    margin-top: 7vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    /*padding: 1vw !important;*/
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
     border-bottom: 1px solid white;
 }
