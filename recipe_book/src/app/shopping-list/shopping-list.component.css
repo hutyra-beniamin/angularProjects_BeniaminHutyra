@@ -1,0 +1,19 @@
+#shopping-list-style {
+    background: url(https://images.pexels.com/photos/2064359/pexels-photo-2064359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    object-fit: cover;
+    background-position: center;
+    padding-bottom: 15vw;
+}
+
+#ingredient-card-style {
+    opacity: 0.6 !important;
+    margin: 0.5vw;
+}
+
+#ingredient-card-style:hover {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 25px 28px 5px rgba(48, 50, 50, 0.43);
+    -moz-box-shadow: 0px 25px 28px 5px rgba(48, 50, 50, 0.43);
+    box-shadow: 0px 25px 28px 5px rgba(48, 50, 50, 0.43);
+    opacity: 1;
+}

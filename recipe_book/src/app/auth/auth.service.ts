@@ -5,6 +5,7 @@ import { throwError, BehaviorSubject } from 'rxjs';
 import { User } from './user.model';
 import { Router } from '@angular/router';
 import { getLocaleTimeFormat } from '@angular/common';
+import { environment } from '../../environments/environment';
 
 
 export interface AuthResponseData {
@@ -22,13 +23,13 @@ export interface AuthResponseData {
 export class AuthService {
     user = new BehaviorSubject<User>(null);
     private tokenExpirationTimer: any;
-    
+
 
     constructor(private http: HttpClient, private router: Router) {}
 
     signup(email: string, password: string) {
         return this.http.post<AuthResponseData>(
-            'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyA6TLChmK0C_vHDwlaCAv3FK2HV9EA6FzM',
+            'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' + environment.firebaseAPIKey,
             {
                 email: email,
                 password: password,
@@ -42,7 +43,7 @@ export class AuthService {
 
     login(email: string, password: string) {
         return this.http.post<AuthResponseData>(
-            'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA6TLChmK0C_vHDwlaCAv3FK2HV9EA6FzM',
+            'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + environment.firebaseAPIKey,
         {
             email: email,
             password: password,
